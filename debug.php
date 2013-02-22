@@ -27,7 +27,7 @@ function debug_dump(){
 			echo '<pre>';
 			call_user_func_array('var_dump',func_get_args());
 			echo '</pre>';
-			Tpl::_get()->setDebug(ob_get_contents());
+			Tpl::_get()->addDebug(ob_get_contents());
 			ob_end_clean();
 		}
 	} else {
