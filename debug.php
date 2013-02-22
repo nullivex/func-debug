@@ -22,11 +22,16 @@
 //prints web readable debug output when not in CLI mode
 //	exact same prototype as PHPs var_dump
 function debug_dump(){
-	if(php_sapi_name() == 'cli'){
-		echo '<pre>'; call_user_func_array('var_dump',func_get_args()); echo '</pre>';
+	if(php_sapi_name() != 'cli'){
+		if(ob_start()){
+			echo '<pre>';
+			call_user_func_array('var_dump',func_get_args());
+			echo '</pre>';
+			Tpl::_get()->setDebug(ob_get_contents());
+			ob_end_clean();
+		}
 	} else {
 		call_user_func_array('var_dump',func_get_args());
 	}
 }
-
 
