@@ -2,7 +2,7 @@
 	 "name":				"openlss/func-debug"
 	,"homepage":			"http://openlss.org"
 	,"description":			"Debugging helper functions"
-	,"license":				"LGPLv2"
+	,"license":				"LGPL-3.0+"
 	,"type":				"library"
 	,"keywords": [
 		 "debug"
