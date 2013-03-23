@@ -1,5 +1,6 @@
 <?php
-require_once(dirname(__DIR__).'/test_common.php');
+require_once(dirname(__DIR__).'/vendor/autoload.php');
+require_once('boot.php');
 ld('/func/debug');
 
 class FuncDebugTest extends PHPUNIT_Framework_TestCase {
