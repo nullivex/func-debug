@@ -17,8 +17,7 @@
  *	You should have received a copy of the 
  *	GNU Lesser General Public License along with OpenLSS.
  *	If not, see <http://www.gnu.org/licenses/>.
-*/
-namespace LSS;
+ */
 
 //prints web readable debug output when not in CLI mode
 //	exact same prototype as PHPs var_dump

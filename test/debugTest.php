@@ -18,12 +18,10 @@
  *	GNU Lesser General Public License along with OpenLSS.
  *	If not, see <http://www.gnu.org/licenses/>.
 */
-namespace LSS;
 require_once(dirname(__DIR__).'/vendor/autoload.php');
-require_once('boot.php');
-ld('/func/debug');
+require_once('lss_boot.php');
 
-class FuncDebugTest extends \PHPUNIT_Framework_TestCase {
+class FuncDebugTest extends PHPUNIT_Framework_TestCase {
 
 	public function testDebugDump(){
 		ob_end_flush();
