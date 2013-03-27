@@ -7,8 +7,6 @@ Usage
 ----
 
 ```php
-ld('func/debug');
-
 $var = array('test'=>'testing');
 debug_dump($var);
 ```
